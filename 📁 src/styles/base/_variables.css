@@ -1,0 +1,24 @@
+:root {
+    /* Colors */
+    --color-primary: #ff0044;
+    --color-background: #111111;
+    --color-text: #ffffff;
+    --color-accent: #00ffff;
+    
+    /* Typography */
+    --font-main: 'Courier New', monospace;
+    --font-secondary: 'VCR OSD Mono', monospace;
+    
+    /* Spacing */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 4rem;
+    
+    /* Breakpoints */
+    --bp-mobile: 576px;
+    --bp-tablet: 768px;
+    --bp-desktop: 1024px;
+    --bp-wide: 1200px;
+}
