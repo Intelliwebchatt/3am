@@ -1,0 +1,23 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.5;
+    font-family: 'Courier New', monospace;
+    background-color: #111111;
+    color: #ffffff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
