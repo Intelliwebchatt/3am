@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="3AM Productions - Investigative journalism uncovering truth in the darkest hours">
+    <meta name="keywords" content="investigative journalism, deep dive, news, exposé, truth">
+    <meta name="author" content="3AM Productions">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="3AM Productions">
+    <meta property="og:description" content="Investigative journalism uncovering truth in the darkest hours">
+    <meta property="og:image" content="/assets/images/og-image.jpg">
+    <meta property="og:url" content="https://3amproductions.com">
+    
+    <title>3AM Productions | Investigative Journalism</title>
+    
+    <!-- Preload Critical Assets -->
+    <link rel="preload" href="/assets/fonts/your-main-font.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/css/critical.css" as="style">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    
+    <!-- Preconnect to External Resources -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+</head>
+<body>
+    <!-- Skip to Main Content Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="site-header" role="banner">
+        <div class="header-container container">
+            <!-- Navigation Toggle for Mobile -->
+            <button class="nav-toggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Logo -->
+            <div class="logo">
+                <a href="/" aria-label="3AM Productions Home">
+                    <img src="/assets/images/logo.svg" alt="3AM Productions Logo" width="150" height="50">
+                </a>
+            </div>
+
+            <!-- Main Navigation -->
+            <nav class="main-nav" role="navigation" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="/investigations">Investigations</a></li>
+                    <li><a href="/deep-dives">Deep Dives</a></li>
+                    <li><a href="/topics">Topics</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact" class="btn btn-primary">Submit Tip</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-container container">
+                <div class="hero-content">
+                    <h1 class="hero-title">3 A.M.</h1>
+                    <h2 class="hero-subtitle">PRODUCTION TIME</h2>
+                    <p class="hero-tagline">Investigative Report</p>
+                </div>
+                <div class="hero-overlay"></div>
+                <div class="vhs-effect"></div>
+            </div>
+        </section>
+
+        <!-- Latest Investigations -->
+        <section class="investigations" aria-label="Latest investigations">
+            <div class="container">
+                <h2 class="section-title">Latest Investigations</h2>
+                <div class="investigation-grid">
+                    <!-- Investigation Cards -->
+                    <article class="investigation-card">
+                        <div class="card-media">
+                            <img src="/api/placeholder/400/300" alt="Investigation thumbnail" loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">The Hidden Network</h3>
+                            <p class="card-excerpt">Exposing corporate corruption in the heart of the city...</p>
+                            <footer class="card-meta">
+                                <time datetime="2024-04-15">April 15, 2024</time>
+                                <span class="reading-time">15 min read</span>
+                            </footer>
+                        </div>
+                    </article>
+                    <!-- More investigation cards... -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Topics Section -->
+        <section class="topics" aria-label="Hot topics">
+            <div class="container">
+                <h2 class="section-title">Hot Topics</h2>
+                <div class="topics-grid">
+                    <!-- Topic Cards -->
+                    <article class="topic-card">
+                        <h3 class="topic-title">Tech Giants' Data Collection</h3>
+                        <p class="topic-excerpt">Discussing the implications of mass surveillance...</p>
+                        <div class="topic-meta">
+                            <span class="comment-count">24 comments</span>
+                            <span class="share-count">156 shares</span>
+                        </div>
+                    </article>
+                    <!-- More topic cards... -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips Submission -->
+        <section class="tips-section" aria-label="Submit a tip">
+            <div class="container">
+                <h2 class="section-title">Have a Story?</h2>
+                <div class="tips-content">
+                    <form id="tips-form" class="tips-form" action="/submit-tip" method="POST">
+                        <div class="form-group">
+                            <label for="tip-subject">Subject</label>
+                            <input type="text" id="tip-subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="tip-message">Your Information</label>
+                            <textarea id="tip-message" name="message" rows="5" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="tip-files">Attach Files</label>
+                            <input type="file" id="tip-files" name="files" multiple>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit Securely</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter" aria-label="Newsletter signup">
+            <div class="container">
+                <h2 class="section-title">Stay Informed</h2>
+                <form id="newsletter-form" class="newsletter-form" action="/subscribe" method="POST">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <button type="submit" class="btn btn-secondary">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>About Us</h4>
+                    <p>Uncovering truth in the darkest hours...</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/privacy">Privacy Policy</a></li>
+                        <li><a href="/terms">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Follow us on Twitter">Twitter</a>
+                        <a href="#" aria-label="Follow us on Instagram">Instagram</a>
+                        <a href="#" aria-label="Subscribe to our YouTube">YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 3AM Productions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js" defer></script>
+    <script src="/assets/js/main.js" type="module"></script>
+    
+    <!-- Optional: Analytics -->
+    <script async src="/assets/js/analytics.js"></script>
+</body>
+</html> 
+ 
